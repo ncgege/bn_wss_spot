@@ -35,7 +35,7 @@ async def user_data_stream_subscribe():
         logging.info(f"user_data_stream_subscribe() response: {data}")
 
         res.stream.on("message", lambda data: print(f"{data}"))
-        await asyncio.sleep(10)
+        await asyncio.sleep(120)
         await res.stream.unsubscribe()
         await connection.session_logout()
 

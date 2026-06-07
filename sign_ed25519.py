@@ -9,7 +9,7 @@ from cryptography.hazmat.primitives.serialization import load_pem_private_key
 from websocket import create_connection
 
 # 设置身份验证：
-API_KEY='wHzEsV4gCAu1zWpuhjOtMmf3LENj6LaDHyfqRyWn9IsFSBPgU2MGgMi7JT2tAJab'
+API_KEY='你的apiKey'
 PRIVATE_KEY_PATH='id_ed25519.pem'
 
 # 加载 private key。

@@ -1,9 +1,12 @@
 import asyncio
+from dotenv import load_dotenv
 import os
 import logging
-
 from binance_sdk_spot.spot import Spot, SPOT_WS_API_PROD_URL, ConfigurationWebSocketAPI
 
+
+# 显式加载 .env 文件到环境变量中
+load_dotenv()
 
 # Configure logging
 logging.basicConfig(filename="stream.log",level=logging.INFO)

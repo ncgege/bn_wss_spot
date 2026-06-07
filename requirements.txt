@@ -1,3 +1,4 @@
 cryptography
 websocket-client
 binance-sdk-spot
+python-dotenv

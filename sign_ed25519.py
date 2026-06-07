@@ -40,10 +40,10 @@ try:
     signature = base64.b64encode(private_key.sign(payload.encode('UTF-8')))
     params['signature'] = signature.decode('ASCII')
 
-    # 发送请求：
+    # 发送请求，查询BNBFDUSD当前所有挂单
     request = {
         'id': 'my_new_order',
-        'method': 'order.status',
+        'method': 'openOrders.status',
         'params': params
     }
 

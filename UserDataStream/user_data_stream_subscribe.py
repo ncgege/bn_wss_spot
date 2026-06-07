@@ -6,7 +6,7 @@ from binance_sdk_spot.spot import Spot, SPOT_WS_API_PROD_URL, ConfigurationWebSo
 
 
 # Configure logging
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(filename="stream.log",level=logging.INFO)
 
 # Create configuration for the WebSocket API
 configuration_ws_api = ConfigurationWebSocketAPI(

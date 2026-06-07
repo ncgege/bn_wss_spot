@@ -1,2 +1,3 @@
 cryptography
 websocket-client
+binance-sdk-spot
